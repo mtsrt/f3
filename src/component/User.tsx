@@ -3,7 +3,7 @@ import React from "react";
 function User() {
   return (
     <div>
-      <h1>serInfo</h1>
+      <h1>UserInfo</h1>
     </div>
   );
 }
