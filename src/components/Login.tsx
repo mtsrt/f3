@@ -10,8 +10,10 @@ const Login: React.FC = () => {
     return <button onClick={signInWithGoogle}>Googleでサインイン</button>;
   };
   return (
-    <div>
-      <h1 style={{ color: "black" }}>LoginPage</h1>
+    <div
+      style={{ alignItems: "center", textAlign: "center", marginTop: "100px" }}
+    >
+      <h1>LoginPage</h1>
       <SignInButton />
     </div>
   );
