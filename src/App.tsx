@@ -6,6 +6,7 @@ import User from "./component/User";
 import Entrance from "./component/Entrance";
 import Login from "./component/Login";
 import Exit from "./component/Exit";
+import { NotFound } from "./component/NotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/user" element={<User />} />
           <Route path="/entrance" element={<Entrance />} />
           <Route path="/exit" element={<Exit />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
