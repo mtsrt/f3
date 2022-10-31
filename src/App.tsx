@@ -1,15 +1,19 @@
 import React from "react";
 import "./App.css";
-import Header from "./component/Header";
-import Home from "./component/Home";
-import User from "./component/User";
-import Entrance from "./component/Entrance";
-import Login from "./component/Login";
-import Exit from "./component/Exit";
-import { NotFound } from "./component/NotFound";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import User from "./components/User";
+import Entrance from "./components/Entrance";
+import Login from "./components/Login";
+import Exit from "./components/Exit";
+import { NotFound } from "./components/NotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { auth } from "./components/firebase";
+import { Auth } from "firebase/auth";
 
 const App: React.FC = () => {
+  const [user] = useAuthState(auth);
+
   return (
     <div style={{ margin: "0", padding: "0" }}>
       <Header />
@@ -28,3 +32,6 @@ const App: React.FC = () => {
 };
 
 export default App;
+function useAuthState(auth: Auth): [any] {
+  throw new Error("Function not implemented.");
+}
