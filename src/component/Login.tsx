@@ -10,7 +10,7 @@ const Login: React.FC = () => {
     };
     return (
       <button onClick={signInWithGoogle}>
-        <Link to="home">Googleでサインイン</Link>
+        Googleでサインイン
       </button>
     );
   };
