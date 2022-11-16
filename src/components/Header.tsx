@@ -1,8 +1,12 @@
+import { Box } from "@mui/material";
+
 const Header = () => {
   return (
-    <div style={{ backgroundColor: "#DC143C", color: "white", height: "70px" }}>
-      <h1 style={{ marginLeft: "20px", paddingTop: "15px" }}>GateWay</h1>
-    </div>
+    <Box
+      sx={{ backgroundColor: "#424242", color: "white", height: "70px" }}
+    >
+      <Box fontSize={65} fontWeight="fontWeightBold" sx={{ letterSpacing: 10 }}>GateWay</Box>
+    </Box>
   );
 };
 

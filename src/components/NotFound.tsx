@@ -1,14 +1,16 @@
 import React from "react";
-import Login from "./Login";
-import Home from "./Home";
+import { useNavigate } from "react-router-dom";
+import {Button} from "@mui/material";
 
 export const NotFound = () => {
+  const navigate = useNavigate();
+
   return (
-    <div style={{textAlign: "center"}}>
+    <div style={{ textAlign: "center" }}>
       <h1>404</h1>
       <h3>お探しのページは見つかりませんでした。</h3>
-      <button onClick={<Login />}>LogInに戻る</button>
-      <button onClick={<Home />}>Homeに戻る</button>
+      <Button onClick={() => navigate("/")}>LogInに戻る</Button>
+      <Button onClick={() => navigate("/home")}>Homeに戻る</Button>
     </div>
   );
 };
