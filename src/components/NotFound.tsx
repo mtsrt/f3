@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import {Button} from "@mui/material";
+import { Button } from "@mui/material";
 
 export const NotFound = () => {
   const navigate = useNavigate();
@@ -10,7 +10,6 @@ export const NotFound = () => {
       <h1>404</h1>
       <h3>お探しのページは見つかりませんでした。</h3>
       <Button onClick={() => navigate("/")}>LogInに戻る</Button>
-      <Button onClick={() => navigate("/home")}>Homeに戻る</Button>
     </div>
   );
 };
